@@ -1,6 +1,6 @@
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
 typedef struct LinkList 
 {
 	int data; 
@@ -64,9 +64,9 @@ void HeadCreatLinkList(LinkList *L)
 void Add(LinkList *L) 
 { 	
      int a,b,i=0;
-     printf("输入要插入的位置");
+     printf("杈撳叆瑕佹彃鍏ョ殑浣嶇疆");
      scanf("%d",&a);
-     printf("输入要插入的数字");
+     printf("杈撳叆瑕佹彃鍏ョ殑鏁板瓧");
      scanf("%d",&b);
 	 LinkList *p;
 	 LinkList *t;
@@ -88,10 +88,10 @@ void Add(LinkList *L)
 void Delete(LinkList *L) 
 { 
      int a,i=0;
-     printf("输入要删除的节点位置");
+     printf("杈撳叆瑕佸垹闄ょ殑鑺傜偣浣嶇疆");
      scanf("%d",&a);
 	 LinkList *p;
-	 LinkList *t;   //建立要插入的节点为t
+	 LinkList *t;   //寤虹珛瑕佹彃鍏ョ殑鑺傜偣涓簍
 	 t = (struct LinkList*)malloc(sizeof(struct LinkList));  
 	 p = (struct LinkList*)malloc(sizeof(struct LinkList)); 
 	 p = L->next;   
